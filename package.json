@@ -1,0 +1,16 @@
+{
+  "name": "concurrent-progress-report-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.mjs",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@concurrent-world/client": "^1.0.4",
+    "axios": "^1.4.0",
+    "moment": "^2.29.4"
+  }
+}
