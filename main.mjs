@@ -4,8 +4,6 @@ import axios from "axios";
 
 const CONCURRENT_REPO_API = "https://api.github.com/repos/totegamma/concurrent-web";
 
-// concurrent settings
-const userAddress = process.env.CCID;
 const privateKey = process.env.PRIVATE_KEY;
 const host = process.env.CONCURRENT_HOST;
 const clientSig = "concurrent-dev-progress-report-bot";
@@ -15,7 +13,7 @@ const githubToken = process.env.GITHUB_TOKEN;
 
 const postStreams = process.env.CONCURENT_POST_STREAMS.split(',');
 
-const client = new Client(userAddress, privateKey, host, clientSig);
+const client = new Client(privateKey, host, clientSig);
 
 // await client.createCurrent("Hello", postStreams)
 
@@ -143,4 +141,4 @@ ${pullRequestsDetails.map(pr => {
 `
 
 
-await client.createCurrent(messageText, postStreams)
+await client.createCurrent(messageText, postStreams, {}, {})

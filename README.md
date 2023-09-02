@@ -15,7 +15,6 @@ helmのvaluesも同じ名前になっています。
 
 | 環境変数名                  | 説明                                   |
 |------------------------|--------------------------------------|
-| CCID                   | Concurrent CCID                      |
 | PRIVATE_KEY            | Concurrent Private key               |
 | CONCURRENT_HOST        | Concurrent account host              |
 | CONCURENT_POST_STREAMS | now listeningを流すストリームをカンマ区切りで入れてください |

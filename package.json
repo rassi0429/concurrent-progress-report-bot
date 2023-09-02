@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@concurrent-world/client": "^1.0.4",
+    "@concurrent-world/client": "^2.2.8",
     "axios": "^1.4.0",
     "moment": "^2.29.4"
   }
